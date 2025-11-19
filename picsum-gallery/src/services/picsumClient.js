@@ -1,12 +1,13 @@
 import axios from "axios";
+import { BASE_URL, TIMEOUT } from "@/config/constants";
 
 /**
  * Cấu hình Axios Client dùng chung.
  * Giúp quản lý baseURL, timeout và headers tập trung tại một nơi.
  */
 const picsumClient = axios.create({
-  baseURL: "https://picsum.photos",
-  timeout: 10000, // Timeout sau 10 giây
+  baseURL: BASE_URL,
+  timeout: TIMEOUT,
   headers: {
     "Content-Type": "application/json",
   },

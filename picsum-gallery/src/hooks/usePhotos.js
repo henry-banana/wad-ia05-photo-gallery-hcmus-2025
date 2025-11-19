@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import { fetchPhotoList } from '../services/picsumClient';
+import { fetchPhotoList } from '@/services/picsumClient';
 
 const usePhotos = () => {
   const [photos, setPhotos] = useState([]);
